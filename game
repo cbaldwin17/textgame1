@@ -1,0 +1,7 @@
+def startingroom():
+    print("You wake up in a dark, dirty room.")
+    answer = raw_input().lower()
+            if answer=="look around":
+                print("")
+            else: 
+                print("Try looking around")
