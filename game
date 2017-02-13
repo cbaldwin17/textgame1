@@ -39,13 +39,13 @@ def hallwayaction():
     answer=raw_input().lower()
     if answer=="exit hallway" or "go through door" or "open door" or "open ajar door" or "leave hallway":
         print("You exit through the open door and step out onto a sidewalk.")
-    elif answer=="look at footprints"
+    elif answer=="look at footprints":
         print("You look at the footprints and look at your worn sneakers. They appear to be the same size. No one else has been here in a long time.")
         hallwayaction()
-    elif answer=="look around"
+    elif answer=="look around":
         print("Scanning the hallway, you see that it is lined with closed doors. You try one and find that it is locked. The linoleum floors are dusty, save for a single track of footprints leading to the door you stand in. There is a door standing ajar at the end of the hallway.")
         hallwayaction()
-    elif answer=="help"
+    elif answer=="help":
         print("try exiting the hallway")
         hallwayaction()
     else:
@@ -54,7 +54,7 @@ def hallwayaction():
 hallwayaction()
 def sidewalkview():
     answer=raw_input().lower()
-    if answer=="look around"
+    if answer=="look around":
         print("Add")
     else:
         print("Try looking around.")
