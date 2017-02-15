@@ -9,13 +9,13 @@ def startingroom():
 startingroom()
 def roomaction():
     answer=raw_input().lower()
-    if answer=="flip the switch" or "flip the light switch" or "turn on the lights" or "turn on the light" or "turn on light" or "flip switch" or "turn on lights":
+    if answer=="flip the switch" or answer=="flip the light switch" or answer=="turn on the lights" or answer=="turn on the light" or answer=="turn on light" or answer=="flip switch" or answer=="turn on lights":
         print("The power does not seem to be working.")
         roomaction()
-    elif answer=="look at picture" or "look at picture frame" or "pick up picture":
+    elif answer=="look at picture" or answer=="look at picture frame" or answer=="pick up picture":
         print("The picture is old and worn, contained in a cracked glass frame. You see yourself, smiling, between an older man and woman.")
         roomaction()
-    elif answer=="open the door" or "open door" or "go outside" or "exit room":
+    elif answer=="open the door" or answer=="open door" or answer=="go outside" or answer=="exit room":
         print("You exit the room and enter a long, dim hallway.")
     elif answer=="help":
         print("Try turning on the lights, looking at the picture, or opening the door.")
@@ -32,12 +32,12 @@ def hallwayview():
     if answer=="look around":
         print("Scanning the hallway, you see that it is lined with closed doors. You try one and find that it is locked. The linoleum floors are dusty, save for a single track of footprints leading to the door you stand in. There is a door standing ajar at the end of the hallway.")
     else:
-        print("Observe your surroundings.")
+        print("Try looking around.")
         hallwayview()
 hallwayview()
 def hallwayaction():
     answer=raw_input().lower()
-    if answer=="exit hallway" or "go through door" or "open door" or "open ajar door" or "leave hallway":
+    if answer=="exit hallway" or answer=="go through door" or answer=="open door" or answer=="open ajar door" or answer=="leave hallway":
         print("You exit through the open door and step out onto a sidewalk.")
     elif answer=="look at footprints":
         print("You look at the footprints and look at your worn sneakers. They appear to be the same size. No one else has been here in a long time.")
