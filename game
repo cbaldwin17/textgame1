@@ -55,8 +55,51 @@ hallwayaction()
 def sidewalkview():
     answer=raw_input().lower()
     if answer=="look around":
-        print("Add")
+        print("It is a bright, sunny day outside, but not many people seem to be around. You wonder why they have all stayed indoors. All around you are dirty, blockish buildings. The street is covered with litter. Across from you is a convenience store that appears to be open, the only one of its kind. The building you have just came from is a crumbling, 3 story brick apartment building. You see a sign on the door.")
     else:
         print("Try looking around.")
         sidewalkview()
 sidewalkview()
+def sidewalkaction():
+    answer=raw_input().lower()
+    if answer=="look at sign" or answer=="look at door sign" or answer=="read sign":
+        print('The sign reads "Notice of Demolition: Sunnybrook apartments is scheduled for demolition on Tuesday the fifth." That is tomorow.')
+        sidewalkaction()
+    elif answer=="go into store" or answer=="go into convenience store" or answer=="go to convenience store" or answer=="go to store":
+        print('You walk into the convenience store across the street. There is a single blonde man at the register and no one else in the store. Feeling quite hungry, you begin to browse the aisles. "Hey!" You hear. "I don\'t want any trouble. Seek the golden gate somewhere else." There is no one else in the store. What is he talking about? Is he talking to you? You peer around the side of a shelf to see. The man looks angry, but also scared. You are scared now too. His hand creeps under the register. You should probably leave and find help.)
+    elif answer=="help"
+        print ("Try looking at the sign or going into the store.")
+        sidewalkaction()
+    else:
+        print("Try something else.")
+        sidewalkaction()
+sidewalkaction()
+def convenience():
+    answer=raw_input().lower()
+    if answer=="leave store" or answer=="exit store" or answer=="leave the store" or answer=="leave":
+        print("You quickly slip out of the store, feeling the man's eyes on you the whole way. His unfounded hostility was unsettling. And what was he even talking about? You look around for a place to go and see that there is a police station at the end of the block. You head towards it. When you get there, you stand at the enterance.")
+    elif answer=="help":
+        print("That guy seemed on edge. You should probably leave the store.")
+        convenience()
+    else:
+        print("Try something else.")
+convenience()
+def station():
+    answer=raw_input().lower()
+    if answer=="go inside" or answer=="go into station" or answer=="enter station" or answer=="go into police station" or answer=="enter police station":
+        print("You push open the glass doors and enter the station.")
+    elif answer=="help":
+        print("You should go inside to get help.")
+        station()
+    else:
+        print("Try something else.")
+        station()
+station()
+def stationview():
+    answer=raw_input().lower()
+    if answer=="look around"
+        print("There is a desk to your left for inquiries and general assistance with a bored looking receptionist. There are a few chairs in the front, and a policeman sits in one of them, drinking a coffee. Everywhere else, policemen and plainclothes workers are walking hurredly back and forth.")
+    else:
+        print("Try looking around.")
+        stationview()
+stationview()
