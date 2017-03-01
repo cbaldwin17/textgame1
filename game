@@ -171,8 +171,13 @@ park()
 def lastquestion():
     answer=raw_input().lower()
     if answer=="stop and ask her" or answer=="ask her" or answer=="stop" or answer=="stop and ask":
-        print()
+        print("""You walk up to the woman. "Am I going the right way to the gate?" you ask. "That depends." She's been crying. "Not when--just fuck their opportunity. Fuck the lies. I was so young when I came...I have to go." She walks away. You continue forward, unsettled. )
     elif answer=="keep going":
         print()
     elif answer=="help"
+        print("Try to stop and ask her or keep going")
+        lastquestion()
     else:
+        print("Try something else")
+        lastquestion()
+lastquestion()
