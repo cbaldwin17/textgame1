@@ -170,3 +170,9 @@ def park():
 park()
 def lastquestion():
     answer=raw_input().lower()
+    if answer=="stop and ask her" or answer=="ask her" or answer=="stop" or answer=="stop and ask":
+        print()
+    elif answer=="keep going":
+        print()
+    elif answer=="help"
+    else:
