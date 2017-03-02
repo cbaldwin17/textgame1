@@ -209,10 +209,11 @@ def listfunctions():
         print("I am the gatekeeper, Version 2.43.7, all rights reserved. All software, products, and product derivitives associated with the gatekeeper are property of the Bureau of Domestic Immigration, a subcommitte of the Department of Homeland Security. All data within the gatekeeper database, including but not limited to that derived from census, social security, web queries, and cellular devices is property of the BDI. This is a full lifetime domestic license.")
         listfunctions()
     elif answer=="travel status":
-        print("User 2144xv. Documentation: Verified. Dream Act status: Incomplete. Clearance: User 2144xv is not cleared for permanent passage due to judicial, education and financial history. Tourism up to 5 consecutive days permitted.")
+        print("User 2144xv. Documentation: Verified. Dream Act status: Incomplete. Clearance: User 2144xv is not cleared for permanent passage due to judicial, education, and financial history. Tourism up to 5 consecutive days permitted.")
         listfunctions()
     elif answer=="function":
         print("My responsibilities include but are not limited to: monitering the internal border, holding records of domestic clearance and dream act status, and enforcing domestic and international immigration policies. The gatekeeper system is authorized to check, question, and detain persons of interest for a time period up to but not exceeding 30 days, with or without proper judicial clearance or probable cause.")
+        listfunctions()
     elif answer=="fees":
         print("The current fees for tourism into the golden sector are $4,500 per day. The Bureau of Domestic immegration encourages tourism, and reminds its people that the dream is for everyone in our country.")
         listfunctions()
