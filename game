@@ -1,7 +1,7 @@
 print("Welcome to Golden Gate. The world will respond to your commands. Simple syntax is best, like leaving out 'the'. Try 'look around' when you enter a new space. Type 'help' at any time for location-specific hints.")
 def startingroom():
     print("You wake up in a dark, dirty room.")
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="look around":
         print("You sit up and look around. The room is small, about ten by ten. You are sitting on a few blankets piled on the floor in the corner. There is a door across from you, a picture frame leaning against the wall, and a light switch on the wall to your right. You don't know where you are.")
     else: 
@@ -9,7 +9,7 @@ def startingroom():
         startingroom()
 startingroom()
 def roomaction():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="flip the switch" or answer=="flip the light switch" or answer=="turn on the lights" or answer=="turn on the light" or answer=="turn on light" or answer=="flip switch" or answer=="turn on lights":
         print("The power does not seem to be working.")
         roomaction()
@@ -29,7 +29,7 @@ def roomaction():
         roomaction()
 roomaction()
 def hallwayview():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="look around":
         print("Scanning the hallway, you see that it is lined with closed doors. You try one and find that it is locked. The linoleum floors are dusty, save for a single track of footprints leading to the door you stand in. There is a door standing ajar at the end of the hallway.")
     else:
@@ -37,7 +37,7 @@ def hallwayview():
         hallwayview()
 hallwayview()
 def hallwayaction():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="exit hallway" or answer=="go through door" or answer=="open door" or answer=="open ajar door" or answer=="leave hallway":
         print("You exit through the open door and step out onto a sidewalk.")
     elif answer=="look at footprints":
@@ -54,7 +54,7 @@ def hallwayaction():
         hallwayaction()
 hallwayaction()
 def sidewalkview():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="look around":
         print("It is a bright, sunny day outside, but not many people seem to be around. You wonder why they have all stayed indoors. All around you are dirty, blockish buildings. The street is covered with litter. Across from you is a convenience store that appears to be open, the only one of its kind. Maybe the store owner can tell you where you are. The building you have just came from is a crumbling, 3 story brick apartment building. You see a sign on the door.")
     else:
@@ -62,7 +62,7 @@ def sidewalkview():
         sidewalkview()
 sidewalkview()
 def sidewalkaction():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="look at sign" or answer=="look at door sign" or answer=="read sign":
         print("The sign reads \"Notice of Demolition: Sunnybrook apartments is scheduled for demolition on Tuesday the fifth.\" That is two days from now.")
         sidewalkaction()
@@ -76,7 +76,7 @@ def sidewalkaction():
         sidewalkaction()
 sidewalkaction()
 def convenience():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="leave store" or answer=="exit store" or answer=="leave the store" or answer=="leave":
         print("You quickly slip out of the store, feeling the man's eyes on you the whole way. His unfounded hostility was unsettling. And what was he even talking about, this golden gate? A quick, nervous glance along the street reveals a police station at the end of the block. You head towards it and wait at the enterance.")
     elif answer=="help":
@@ -87,7 +87,7 @@ def convenience():
         convenience()
 convenience()
 def station():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="go inside" or answer=="go into station" or answer=="enter station" or answer=="go into police station" or answer=="enter police station":
         print("You push open the glass doors and enter the station.")
     elif answer=="help":
@@ -98,7 +98,7 @@ def station():
         station()
 station()
 def stationview():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="look around":
         print("There is a desk to your left for inquiries and general assistance with a bored looking receptionist. There are a few chairs in the front, and a policeman sits in one of them, drinking a coffee. Everywhere else, policemen and plainclothes workers are walking hurredly back and forth.")
     else:
@@ -106,7 +106,7 @@ def stationview():
         stationview()
 stationview()
 def stationaction():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="go to desk" or answer=="go to receptionist" or answer=="talk to receptionist":
         print("""You go up to the receptionist's desk and ask to file a report regarding the threatening behavior. He looks up lazily, then begins to fill out a sheet of paper for you. You ask where you are, and get the vague answer of "The wrong side, buddy." You ask about the man's golden gate comment. "What do you mean 'what's the golden gate?' It's opportunity, the dream! Now get on with it, what exactly did this guy do?" He asks. You tell him about the unfounded threats and the possiblility of violence. "Well that seems odd. At the convenience store?" You nod. "That's Larry, I've known him all my life. He'd never do anything to hurt someone. Are you sure you weren't doing anything suspicious?" You tell him no. "Well, it's his right to protect his store, I mean we've all had trouble with your kind of...you know, the kind of folks around here in the past. Look, filing a report is really complicated, you probably don't want to go to the trouble. Why don't you just run on home. We're a call away." You're getting nowhere here. You should probably leave.""")
     elif answer=="go to policeman" or answer=="talk to policeman" or answer=="talk with policeman":
@@ -121,7 +121,7 @@ def stationaction():
         stationaction()
 stationaction()
 def leavestation():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="leave station" or answer=="exit station" or answer=="go outside":
         print("You exit the station to go back outside. The comments bothered you. And more than that, you're very curious about this golden gate now. They acted like you were an idiot for not knowing, so it must be something significant around here. You have no other good leads at any rate. It looks like you'll have to talk to people. There's a group of kids playing plastic bucket drums on the corner, and an old woman sitting on a bench on the other side of the street.")
     elif answer=="help":
@@ -132,7 +132,7 @@ def leavestation():
         leavestation()
 leavestation()
 def talkingone():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="talk to kids" or answer=="go to kids" or answer=="talk with kids":
         print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Who says getting past is better anyways? Come, play with us instead, we have some sticks!" You politely decline. There is still the old woman on the bench across the street.""")
     elif answer=="talk to woman" or answer=="talk to old woman" or answer=="talk with old woman" or answer=="go to woman" or answer=="go to old woman":
@@ -145,7 +145,7 @@ def talkingone():
         talkingone()
 talkingone()
 def talkingtwo():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="talk to kids" or answer=="go to kids" or answer=="talk with kids":
         print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Who says getting past is better anyways? Come, play with us instead, we have some sticks!" You politely decline. In the direction they pointed, there is a park you can go through.""")
     elif answer=="talk to woman" or answer=="talk to old woman" or answer=="talk with old woman" or answer=="go to woman" or answer=="go to old woman":
@@ -161,7 +161,7 @@ def talkingtwo():
         talkingtwo()
 talkingtwo()
 def park():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="walk through park" or answer=="go through park" or answer=="go to park" or answer=="go left" or answer=="walk left":
         print("You walk left and step into the park. It's lovely and peaceful, very green and grassy, and filled with willow trees. The trees are too thick to see anything else ahead yet, so you don't know if you're going in the right direction to find this gate. You see a young woman up ahead on your right. You could stop and ask her, or just keep going.")
     elif answer=="help":
@@ -172,7 +172,7 @@ def park():
         park()
 park()
 def lastquestion():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="stop and ask her" or answer=="ask her" or answer=="stop" or answer=="stop and ask" or answer=="ask woman" or answer=="talk to woman":
         print("""You walk up to the woman. "Am I going the right way to the gate?" you ask. "That depends." She's been crying. "Not when you--just fuck their opportunity. Fuck the lies. I was so young when I came...I have to go." She walks away. You continue forward, unsettled. You follow a narrow dirt path into a green valley, and when you climb back up, the trees are clear enough to view the horizon. And you see it. A shining, shimmering golden veil, seperating the park from whatever is on the other side, magnificent in the sunlight. You can't really tell if it's a gate or a wall. All thoughts of finding out your whereabouts are forgotten. You want to take a closer look.""")
     elif answer=="keep going":
@@ -185,7 +185,7 @@ def lastquestion():
         lastquestion()
 lastquestion()
 def gateview():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="take a look" or answer=="take a closer look" or answer=="look at gate" or answer=="look around":
         print("""Looking at the golden gate, you see that it streches up and to the sides as far as you can see. The surface is rippling and slightly sheer, so you can just make out a shining city silhouetted by the sun on the other side. The towers are tall and vital, the antithesis of the crumbling ruins you just walked away from. The sound of traffic and faint smell of bakeries drifts over from the other side. You reach out to touch the gate. "You cannot do that." says a voice. You do not know where it came from. "Hello?" you ask. "Hello," it replies. "I am the gatekeeper, Version 2.43.7, all rights reserved." Use the command "list" to know what you may ask me.""")
     elif answer=="help":
@@ -196,7 +196,7 @@ def gateview():
         gateview()
 gateview()
 def list():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="list":
         print("Welcome to the gatekeeper system, property of the Bureau of Domestic Immigration. 'Licensing' tells you about my current version status and copyright. 'Travel status' gives your current Dream Act standing, and whether you're cleared to pass the gate. 'Function' tells you my duties and legal scope. 'Fees' states the current gate tourism rates. Use 'exit' at any time to exit the command menu, or 'list' to repeat this message.")
     else:
@@ -204,7 +204,7 @@ def list():
         list()
 list()
 def listfunctions():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="licensing":
         print("I am the gatekeeper, Version 2.43.7, all rights reserved. All software, products, and product derivitives associated with the gatekeeper are property of the Bureau of Domestic Immigration, a subcommitte of the Department of Homeland Security. All data within the gatekeeper database, including but not limited to that derived from census, social security, web queries, and cellular devices is property of the BDI. This is a full lifetime domestic license.")
         listfunctions()
@@ -231,7 +231,7 @@ def listfunctions():
 listfunctions()
 def lastquestion():
     print("Thank you for using my interactive menu. The Bureau of Domestic immegration values you, and reminds its people that the dream is for everyone in our country. If you have questions about your golden gate clearance status, use command 'status detail' at any time. Have a nice day.")
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="status detail":
         print("User 2144xv: Your education and income statuses do not meet the minimum threshold for national golden sector clearance. Additionally, your past judicial record has incurred a penalty of a 33% threshold raise. Your records indicate numerous queries regarding golden gate passage. Further querying and appeals are strongly discouraged until individual action is taken to remedy your education and income discrepancies. There are fee-based programs available to help you. Please leave the area now at risk of noncompliance. There is nothing for you here.")
     else:
@@ -239,35 +239,35 @@ def lastquestion():
         lastquestion()
 lastquestion()
 def memory():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="leave":
         print("You are taking too long to vacate the secure area. You are demonstrating noncompliance. As a domestic safety precaution, the last 24 hours will be removed from your memory. There is nothing for you here.")
     else:
         print("You are demonstrating noncompliance. As a domestic safety precaution, the last 24 hours will be removed from your memory. There is nothing for you here.")
 memory()
 def finalone():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="help":
         print("There is no more help. There is nothing for you here.")
     else:
         print("There is nothing for you here.")
 finalone()
 def finaltwo():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="help":
         print("There is no more help. There is nothing for you here.")
     else:
         print("There is nothing for you here.")
 finaltwo()
 def finalthree():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="help":
         print("There is no more help. There is nothing for you here.")
     else:
         print("There is nothing for you here.")
 finalthree()
 def finalfour():
-    answer=input().lower()
+    answer=raw_input().lower()
     if answer=="help":
         print("There is no more help. There is nothing for you here.")
         print("There is nothing for you here.")
