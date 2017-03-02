@@ -132,7 +132,7 @@ leavestation()
 def talkingone():
     answer=raw_input().lower()
     if answer=="talk to kids" or answer=="go to kids" or answer=="talk with kids":
-        print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Come, play with us instead, we have some sticks!" You politely decline. There is still the old woman on the bench across the street.""")
+        print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Who says getting past is better anyways? Come, play with us instead, we have some sticks!" You politely decline. There is still the old woman on the bench across the street.""")
     elif answer=="talk to woman" or answer=="talk to old woman" or answer=="talk with old woman" or answer=="go to woman" or answer=="go to old woman":
         print("""You sit down next to the woman on the bench and ask what she can tell you about the golden gate. "I was in and out of there plenty of time in my day," she says. "I'm only on this side because my husband died a few years ago and I couldn't work anymore. But it's beautiful over there, past the gate. You're young and good looking, they might let you through. You should try at least. They say anyone can pass through in this country, given enough time. I just have too much. Too much time." She sighs. "It's a beautiful day to try though. May as well walk through the park on the way." The park is off to your left, but the kids are still playing drums across the street.""")
     elif answer=="help"
@@ -144,7 +144,7 @@ talkingone()
 def talkingtwo():
     answer=raw_input().lower()
     if answer=="talk to kids" or answer=="go to kids" or answer=="talk with kids":
-        print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Come, play with us instead, we have some sticks!" You politely decline. In the direction they pointed, there is a park you can go through.""")
+        print("""You ask the group of kids what they know about this golden gate. They laugh. "Oh, it's right over there!" One of them says, pointing left. "But good luck trying to get to it! Not within 20 feet when you're like us. Hah! Waste of your time. Who says getting past is better anyways? Come, play with us instead, we have some sticks!" You politely decline. In the direction they pointed, there is a park you can go through.""")
     elif answer=="talk to woman" or answer=="talk to old woman" or answer=="talk with old woman" or answer=="go to woman" or answer=="go to old woman":
         print("""You sit down next to the woman on the bench and ask what she can tell you about the golden gate. "I was in and out of there plenty of time in my day," she says. "I'm only on this side because my husband died a few years ago and I couldn't work anymore. But it's beautiful over there, past the gate. You're young and good looking, they might let you through. You should try at least. They say anyone can pass through in this country, given enough time. I just have too much. Too much time." She sighs. "It's a beautiful day to try though. May as well walk through the park on the way." The park is off to your left.""")
     elif answer=="help"
@@ -171,9 +171,9 @@ park()
 def lastquestion():
     answer=raw_input().lower()
     if answer=="stop and ask her" or answer=="ask her" or answer=="stop" or answer=="stop and ask":
-        print("""You walk up to the woman. "Am I going the right way to the gate?" you ask. "That depends." She's been crying. "Not when--just fuck their opportunity. Fuck the lies. I was so young when I came...I have to go." She walks away. You continue forward, unsettled. )
+        print("""You walk up to the woman. "Am I going the right way to the gate?" you ask. "That depends." She's been crying. "Not when you--just fuck their opportunity. Fuck the lies. I was so young when I came...I have to go." She walks away. You continue forward, unsettled. You follow a narrow dirt path into a green valley, and when you climb back up, the trees are clear enough to view the horizon. And you see it. A shining, shimmering golden veil, seperating the park from whatever is on the other side, magnificent in the sunlight. You can't really tell if it's a gate or a wall. You want to take a closer look.""")
     elif answer=="keep going":
-        print()
+        print("You continue forward. You follow a narrow dirt path into a green valley, and when you climb back up, the trees are clear enough to view the horizon. And you see it. A shining, shimmering golden veil, seperating the park from whatever is on the other side, magnificent in the sunlight. You can't really tell if it's a gate or a wall. You want to take a closer look.")
     elif answer=="help"
         print("Try to stop and ask her or keep going")
         lastquestion()
@@ -181,3 +181,60 @@ def lastquestion():
         print("Try something else")
         lastquestion()
 lastquestion()
+def gateview():
+    answer=raw_input().lower()
+    if answer=="take a look" or answer=="take a closer look" or answer=="look at gate" or answer=="look around":
+        print("""Looking at the golden gate, you see that it streches up and to the sides as far as you can see. The surface is rippling and slightly sheer, so you can just make out a shining city silhouetted by the sun on the other side. The towers are tall and vital, the antithesis of the crumbling ruins you just walked away from. The sound of traffic and faint smell of bakeries drifts over from the other side. You reach out to touch the gate. "You cannot do that." says a voice. You do not know where it came from. "Hello?" you ask. "Hello," it replies. "I am the gatekeeper, Version 2.43.7, all rights reserved. Use the command "list" to know what you may ask me."""")
+    elif answer=="help":
+        print("Try to look at the gate or take a look")
+        gateview()
+    else:
+        print("Try something else")
+        gateview()
+gateview()
+def list():
+    answer=raw_input().lower()
+    if answer=="list":
+        print("Welcome to the gatekeeper system, property of the Bureau of Domestic Immigration. 'Licensing' tells you about my current version status and copyright. 'Travel status' gives your current Dream Act standing, and whether you're cleared to pass the gate. 'Function' tells you my duties and legal scope. 'Fees' states the current gate tourism rates. Use 'exit' at any time to exit the command menu, or 'list' to repeat this message.")
+    else:
+        print("Use 'list' to query the gatekeeper")
+        list()
+list()
+def listfunctions():
+    answer=raw_input().lower()
+    if answer=="licensing":
+        print("I am the gatekeeper, Version 2.43.7, all rights reserved. All software, products, and product derivitives associated with the gatekeeper are property of the Bureau of Domestic Immigration, a subcommitte of the Department of Homeland Security. All data within the gatekeeper database, including but not limited to that derived from census, social security, web queries, and cellular devices is property of the BDI. This is a full lifetime domestic license.")
+        listfunctions()
+    elif answer=="travel status":
+        print("User 2144xv. Documentation: Verified. Dream Act status: Incomplete. Clearance: User 2144xv is not cleared for permanent passage due to judicial, education and financial history. Tourism up to 5 consecutive days permitted.")
+        listfunctions()
+    elif answer=="function":
+        print("My responsibilities include but are not limited to: monitering the internal border, holding records of domestic clearance and dream act status, and enforcing domestic and international immigration policies. The gatekeeper system is authorized to check, question, and detain persons of interest for a time period up to but not exceeding 30 days, with or without proper judicial clearance or probable cause.")
+    elif answer=="fees":
+        print("The current fees for tourism into the golden sector are $4,500 per day. The Bureau of Domestic immegration encourages tourism, and reminds its people that the dream is for everyone in our country.")
+        listfunctions()
+    elif answer=="list":
+        print("Welcome to the gatekeeper system, property of the Bureau of Domestic Immigration. 'Licensing' tells you about my current version status and copyright. 'Travel status' gives your current Dream Act standing, and whether you're cleared to pass the gate. 'Function' tells you my duties and legal scope. 'Fees' states the current gate tourism rates. Use 'exit' at any time to exit the command menu, or 'list' to repeat this message.")
+        listfunctions()
+    elif answer=="exit"
+        print("Command menu terminated")
+    else:
+        print("I do not understand")
+        listfunctions()
+listfunctions()
+def finalquestion():
+    print("Thank you for using my interactive menu. If you have questions about your golden gate clearance status, use command 'status detail' at any time. Have a nice day.")
+    answer=raw_input().lower()
+    if answer=="status detail"
+        print("User 2144xv: Your education and income statuses do not meet the minimum threshold for national golden sector clearance. Additionally, your past judicial record has incurred a penalty of a 33% threshold raise. Your records indicate numerous queries regarding golden gate passage. Further querying and appeals are strongly discouraged until individual action is taken to remedy your education and income discrepancies. There are fee-based programs available to help you. Please leave the area now. There is nothing for you here.")
+    else:
+        print("The machine does not understand you")
+        finalquestion()
+finalquestion()
+def finalone():
+    answer=raw_input().lower()
+    if answer=="help"
+        print("There is no more help. There is nothing for you here.")
+    else:
+        print("There is nothing for you here.")
+finalone()
